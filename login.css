@@ -1,0 +1,89 @@
+body{
+    
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    position: relative;
+   
+    
+    
+ 
+
+}
+
+
+
+
+
+.signup{
+background-color:transparent;
+display:flex;
+flex-direction: column;
+align-items: center;
+height:500px;
+width:320px;
+border:solid;
+border-width:1px;
+margin-top:80px;
+position: relative;
+font-family:Oswald;
+z-index:0;
+
+}
+.head{
+position:absolute;
+top:20px;
+
+
+}
+.sign-details{
+position: absolute;
+top:80px;
+
+
+
+}
+
+
+
+.input-mobile,
+.input-name,
+.input-username,
+.input-password{
+height:70px;
+
+}
+.mobile-number,
+.name,
+.username,
+.pass-word,
+.button,
+#account{
+height:30px;
+width:280px;
+
+
+
+}
+#button{
+background-color: rgb(74, 74, 238);
+border:none;
+border-radius:2px;
+margin-bottom:20px;
+
+}
+.button:hover{
+  background-color:black;
+  color:white;
+}
+.button:active{
+  color:brown;
+}
+#account{
+   margin-bottom:10px;
+}
+
+
+
+
+
