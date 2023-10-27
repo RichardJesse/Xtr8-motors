@@ -1,0 +1,15 @@
+.active{
+    background-color: black;
+    color:white;
+   }
+   .link{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    
+   }
+   .link a{
+    color: blue;
+ 
+    }
+   
