@@ -1,76 +1,55 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration Page</title>
     <link rel="stylesheet" href="registration.css">
     <link rel="stylesheet" href="navigation.css">
-     <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="general.css">
 </head>
 <body>
 <div class="navigation_container">
-     <div class="left_container">
-       <div class="logo">
-          
-          <h2>XLR8 MOTORS</h2></div>   
-     </div>
-         <div class="right_container">
-            
-            <a href="registration.html" class="active">Signup</a>
-          <a href="login.html" >Login</a>
-          <a href="">About</a>
-         </div>
-     </div>
-        <div class="signup">
-          <div class="heading">
-         <h2>XLR8 Motors</h2>
-     </div>
-         
-              <div class="sign-details">
-                 
-                     <div class="input-mobile">
-                         <input class="mobile-number" type="number" placeholder="Mobile Number" min="0" max="11">
-               
-                           </div>
-                           <div class="input-name">
-                           <input class="name" type="text" placeholder="First Name">
-                           </div>
-                           <div class="input-name">
-                            <input class="name" type="text" placeholder="last Name">
-                            </div>
-                           <div class="input-username">
-                           <input class="username" type="text" placeholder="Username">
-                           </div>
-                           <div class="input-password">
-                           <input class="pass-word" type="password" placeholder="Password">
-                           </div>
-                           <div class="sign-up-button">
-                            <input type="submit" id="button" value="signup" class="button">
-                           </div>
-                              <div class="link">
-                                 Have an Account? <a href="login.html">login</a>
-                              </div>
-               
-                           <div>
-                               <h2 style="text-align: center;
-                               color:black;">Registration form</h2>
-                           </div>
-                       
-                   
-                      
-                   </div>
-                 
-            
-         
-         
-         </div>
- 
- 
-        
- 
- 
- 
-     </div>
+    <div class="left_container">
+        <div class="logo">
+            <h2>XLR8 MOTORS</h2>
+        </div>
+    </div>
+    <div class="right_container">
+        <a href="registration.html" class="active">Signup</a>
+        <a href="login.html">Login</a>
+        <a href="">About</a>
+    </div>
+</div>
+<div class="signup">
+    <div class="heading">
+        <h2>XLR8 Motors Registration</h2>
+    </div>
+    <div class="sign-details">
+        <form action="" >
+            <div class="input-mobile">
+                <input class="mobile-number" type="number" placeholder="Mobile Number" min="0" max="11" required>
+            </div>
+            <div class="input-name">
+                <input class="name" type="text" placeholder="First Name" required>
+            </div>
+            <div class="input-name">
+                <input class="name" type="text" placeholder="Last Name" required>
+            </div>
+            <div class="input-username">
+                <input class="username" type="text" placeholder="Username" required>
+            </div>
+            <div class="input-password">
+                <input class="pass-word" type="password" placeholder="Password" required>
+            </div>
+            <div class="sign-up-button">
+                <input type="submit" id="button" value="SignUp" class="button">
+            </div>
+        </form>
+        <div class="link">
+            Already have an account? <a href="login.html">Login</a>
+        </div>
+    </div>
+</div>
 </body>
 </html>
