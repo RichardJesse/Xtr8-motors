@@ -1,13 +1,13 @@
 body{
     
-   display: flex;
-   align-items: center;
-   justify-content: center;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   position: relative;
+  
    
-    
-    
- 
+   
+
 
 }
 
@@ -73,14 +73,19 @@ margin-bottom:20px;
 
 }
 .button:hover{
-  background-color:black;
-  color:white;
+ background-color:black;
+ color:white;
 }
 .button:active{
-  color:brown;
+ color:brown;
 }
 #account{
-   margin-bottom:10px;
+  margin-bottom:10px;
+}
+.passworderror,
+.usererror{
+ color:red;
+ text-align:center;
 }
 
 
