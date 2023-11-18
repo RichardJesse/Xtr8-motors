@@ -1,0 +1,74 @@
+.vehicle-headbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+  
+  .signup {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 790px;
+    width: 320px;
+    border: solid;
+    border-width: 1px;
+    margin-top: 80px;
+    position: relative;
+    font-family: Oswald;
+    z-index: 0;
+    position: absolute;
+    right: 520px;
+  }
+  
+  .head {
+    position: absolute;
+    top: 20px;
+  }
+  
+  .sign-details {
+    position: absolute;
+    top: 80px;
+  }
+  
+  .input-model,
+  .input-cost,
+  .input-branch,
+  .input-location,
+  .input-plate,
+  .input-image,
+  .car-type,
+  .input-branchphone {
+    height: 70px;
+  }
+  
+  .car-name,
+  .car-brand,
+  .car-cost,
+  .car-location,
+  .car-branch,
+  .number-plate,
+  .button,
+  .selectgari,
+  .car-image,
+  .branch-number {
+    height: 30px;
+    width: 280px;
+  }
+  
+  #button {
+    background-color: rgb(74, 74, 238);
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 20px;
+  }
+  
+  .button:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .button:active {
+    color: brown;
+  }
+ 
