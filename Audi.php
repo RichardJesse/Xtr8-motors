@@ -1,8 +1,10 @@
 <?php
 include("dbconnection.php");
-
-
-
+session_start();
+ if (!isset($_SESSION['username'])) {
+    // code...
+    header('location:login.php');
+ }
 
 ?>
 
@@ -34,7 +36,7 @@ include("dbconnection.php");
         <div class="rightsection">
             <a href="Audi.php"  class="active">Home</a>
             
-            <a href="logout.html">Logout</a>
+            <a href="logout.php">Logout</a>
         </div>
     </div>
         <div class="sidebar">

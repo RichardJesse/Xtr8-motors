@@ -1,6 +1,13 @@
 <?php
   include("dbconnection.php");
-  include("Addvehicle.php")
+  include("Addvehicle.php");
+  session_start();
+ if (!isset($_SESSION['username'])) {
+    // code...
+    header('location:login.php');
+ 
+ 
+}
  
 ?>
 
@@ -41,7 +48,7 @@
             <a class="sidebarlink" href="Users.php"><img class="userimage" src="icon folder/images-users.jpg" alt=""><p>Users</p></a>
         </div>
         <div class="link-container">
-            <a class= "sidebarlink" href=""><img class="logoutimage" src="icon folder/download-logout.jpg" alt=""><p>Logout</p></a>
+            <a class= "sidebarlink" href="logout.php"><img class="logoutimage" src="icon folder/download-logout.jpg" alt=""><p>Logout</p></a>
         </div>
     </div>
     <!-- Creating a form for adding vehicles into the database -->

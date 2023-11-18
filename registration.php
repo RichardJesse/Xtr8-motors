@@ -1,8 +1,30 @@
 <?php
-  include("dbconnection.php");
-  include("registerfunction.php");
+    $success = 0;
+    $unsuccess = 0;
+   include("dbconnection.php");
+   if($_SERVER['REQUEST_METHOD']=='POST'){
+    $FirstName=$_POST['firstname'];
+    $LastName=$_POST['lastname'];
+    $Email=$_POST['email'];
+    $Username=$_POST['username'];
+    $Password=$_POST['password'];
+   
+    //check if email exists
+    
+  
+   
+   $insert="insert into `users`(Email,Firstname,Lastname,Username,Password)
+   values( '$Email','$FirstName','$LastName','$Username','$Password')";
+   $result=mysqli_query($conn, $insert) ;
+   if($result){
+    echo"<script>alert('insertion done successfuly')</script";
+   }
+   else{
+    die(mysqli_error($conn));
+   }
 
-
+  }
+  
 ?>
 
 
@@ -25,8 +47,8 @@
      </div>
          <div class="right_container">
             
-            <a href="registration.html" class="active">Signup</a>
-          <a href="login.html" >Login</a>
+            <a href="registration.php" class="active">Signup</a>
+          <a href="login.php" >Login</a>
           <a href="">About</a>
          </div>
      </div>
@@ -36,7 +58,7 @@
      </div>
               
                 <div class="sign-details">
-                  <form action="registration.php" method="Post">
+                  <form action="registration.php" method="POST">
                     <div class="input-mobile">
                       <input class="email" type="email" name="email" placeholder="email" min="0" max="11">
                          <div class="mobileerr"></div>
@@ -59,7 +81,7 @@
                         <div class="passerr"></div>
                         </div>
                         <div class="sign-up-button">
-                         <input type="submit" id="button" value="signup" class="button">
+                         <input type="submit" id="button" value="signup" class="button" name="signup">
                         </div>
                            <div class="link">
                               Have an Account? <a href="login.html">login</a>
@@ -74,12 +96,25 @@
                    
                 </div>
                   </form>
+                  <div class="message-container">
+                    
+                   <?php
+                   
+
+                    ?>
+                   
+
+
+                  </div>
+                <?php
+                  
+                ?>
+            </div>
                   
               
-              <script src="registration.js"></script>
-        
+             
          
-         
+                 
          </div>
  
  

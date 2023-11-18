@@ -53,7 +53,7 @@ top:80px;
 height:70px;
 
 }
-.mobile-number,
+.email,
 .name,
 .username,
 .pass-word,
@@ -78,8 +78,12 @@ margin-bottom:20px;
 .button:active{
    color:brown;
 }
-
-
-
+.mobileerr,
+.nameerr,
+.lnameerr,
+.usernameerr,
+.passerr{
+color:red;
+}
 
 

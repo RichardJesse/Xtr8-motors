@@ -1,6 +1,12 @@
 <?php
  include("dbconnection.php");
+ session_start();
+ if (!isset($_SESSION['username'])) {
+    // code...
+    header('location:login.php');
  
+ 
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,7 +44,7 @@
             <a class="sidebarlink" href="Users.php"><img class="userimage" src="icon folder/images-users.jpg" alt=""><p>Users</p></a>
         </div>
         <div class="link-container">
-            <a class= "sidebarlink" href=""><img class="logoutimage" src="icon folder/download-logout.jpg" alt=""><p>Logout</p></a>
+            <a class= "sidebarlink" href="logout.php"><img class="logoutimage" src="icon folder/download-logout.jpg" alt=""><p>Logout</p></a>
         </div>
     </div>
     <!-- Creating a table for viewing users details from the database -->
@@ -52,7 +58,7 @@
              <table  >
                 <tr>
                 <th>id</th>
-                <th>MobileNumber</th>
+                <th>Email</th>
                 <th>FirstName</th>
                 <th>LastName</th>
                 <th>Username</th>
@@ -66,8 +72,8 @@
                   $result=mysqli_query($conn,$select);
                   if($result)
                   while($row=mysqli_fetch_assoc($result)){
-                   $id= $row["id"];
-                   $MobileNumber=$row["MobileNumber"];
+                   $id= $row["ID"];
+                   $Email=$row["Email"];
                    $FirstName=$row["Firstname"];
                    $LastName= $row["Lastname"];
                    $Username=$row["Username"];
@@ -76,7 +82,7 @@
                    echo 
                    "<tr>
                    <td>{$id}</td>
-                   <td>{$MobileNumber}</td>
+                   <td>{$Email}</td>
                    <td>{$FirstName}</td>
                    <td>{$LastName}</td>
                    <td>{$Username}</td>

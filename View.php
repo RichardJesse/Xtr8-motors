@@ -1,6 +1,11 @@
 <?php
  include("dbconnection.php");
  include("Delete.php");
+ session_start();
+ if (!isset($_SESSION['username'])) {
+    // code...
+    header('location:login.php');
+ }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,7 +43,7 @@
             <a class="sidebarlink" href="Users.php"><img class="userimage" src="icon folder/images-users.jpg" alt=""><p>Users</p></a>
         </div>
         <div class="link-container">
-            <a class= "sidebarlink" href=""><img class="logoutimage" src="icon folder/download-logout.jpg" alt=""><p>Logout</p></a>
+            <a class= "sidebarlink" href="logout.php"><img class="logoutimage" src="icon folder/download-logout.jpg" alt=""><p>Logout</p></a>
         </div>
     </div>
     <!-- Creating a table for viewing vehicles details from the database -->

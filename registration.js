@@ -36,4 +36,6 @@ function validateEmail(email) {
 
 document.querySelector('.button').addEventListener('click', () => {
     registrationValidity();
+    event.preventDefault(); // Prevent the default form submission behavior
+    registrationValidity();
 });
